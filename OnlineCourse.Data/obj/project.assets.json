@@ -1560,16 +1560,6 @@
         "runtime": {
           "bin/placeholder/OnlineCourse.Core.dll": {}
         }
-      },
-      "OnlineCourse.Service/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "compile": {
-          "bin/placeholder/OnlineCourse.Service.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/OnlineCourse.Service.dll": {}
-        }
       }
     }
   },
@@ -4173,11 +4163,6 @@
       "type": "project",
       "path": "../OnlineCourse.Core/OnlineCourse.Core.csproj",
       "msbuildProject": "../OnlineCourse.Core/OnlineCourse.Core.csproj"
-    },
-    "OnlineCourse.Service/1.0.0": {
-      "type": "project",
-      "path": "../OnlineCourse.Service/OnlineCourse.Service.csproj",
-      "msbuildProject": "../OnlineCourse.Service/OnlineCourse.Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4186,8 +4171,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 8.0.10",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.10",
       "Microsoft.Extensions.Hosting.Abstractions >= 8.0.1",
-      "OnlineCourse.Core >= 1.0.0",
-      "OnlineCourse.Service >= 1.0.0"
+      "OnlineCourse.Core >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -4224,9 +4208,6 @@
           "projectReferences": {
             "E:\\Documents\\OnlineCourse\\OnlineCourseAPI\\OnlineCourse.Core\\OnlineCourse.Core.csproj": {
               "projectPath": "E:\\Documents\\OnlineCourse\\OnlineCourseAPI\\OnlineCourse.Core\\OnlineCourse.Core.csproj"
-            },
-            "E:\\Documents\\OnlineCourse\\OnlineCourseAPI\\OnlineCourse.Service\\OnlineCourse.Service.csproj": {
-              "projectPath": "E:\\Documents\\OnlineCourse\\OnlineCourseAPI\\OnlineCourse.Service\\OnlineCourse.Service.csproj"
             }
           }
         }

@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\OnlineCourse.Core\OnlineCourse.Core.csproj" />
+    <ProjectReference Include="..\OnlineCourse.Data\OnlineCourse.Data.csproj" />
+  </ItemGroup>
+
 </Project>

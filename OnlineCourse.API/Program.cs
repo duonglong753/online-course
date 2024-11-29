@@ -1,6 +1,8 @@
 
 using Microsoft.EntityFrameworkCore;
-using OnlineCourse.Core.Entities;
+using OnlineCourse.Data.Entities;
+using OnlineCourse.Data;
+using OnlineCourse.Service;
 
 namespace OnlineCourse.API
 {
@@ -17,6 +19,7 @@ namespace OnlineCourse.API
             {
                 options.UseSqlServer(configuration.GetConnectionString("DbContext"),
                     provideroptions => provideroptions.EnableRetryOnFailure());
+                options.EnableDetailedErrors();
             });
             #endregion
             // Add services to the container.
@@ -25,6 +28,11 @@ namespace OnlineCourse.API
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            builder.Services.AddScoped<ICourseCategoryRepository, CourseCategoryRepository>();
+            builder.Services.AddScoped<ICourseCategoryService, CourseCategoryService>();
+            builder.Services.AddScoped<ICourseRepository, CourseRepository>();
+            builder.Services.AddScoped<ICourseService, CourseService>();
 
             var app = builder.Build();
 

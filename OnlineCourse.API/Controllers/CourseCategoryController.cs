@@ -16,14 +16,14 @@ namespace OnlineCourse.API.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)
         {
-            var category = courseCategoryService.GetByIdAsync(id);
+            var category = await courseCategoryService.GetByIdAsync(id);
             if (category == null) { return NotFound(); }
             return Ok(category);
         }
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var categories = courseCategoryService.GetCourseCategories();
+            var categories = await courseCategoryService.GetCourseCategories();
             return Ok(categories);
         }
     }

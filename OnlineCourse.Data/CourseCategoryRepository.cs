@@ -1,10 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
-using OnlineCourse.Core.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using OnlineCourse.Core.Entities;
+using Microsoft.EntityFrameworkCore;
+
+using OnlineCourseDbContext = OnlineCourse.Data.Entities.OnlineCourseDbContext;
 
 namespace OnlineCourse.Data
 {
@@ -25,17 +22,5 @@ namespace OnlineCourse.Data
         {
             return dbContext.CourseCategories.ToListAsync();
         }
-
-    /*public CourseCategory? GetById(int id)
-    {
-        var data = dbContext.CourseCategories.Find(id);
-        return data;
-    }
-
-    public List<CourseCategory> GetCourseCategories()
-    {
-        var data = dbContext.CourseCategories.ToList(); 
-        return data;
-    }*/
     }
 }

@@ -41,7 +41,7 @@ public partial class OnlineCourseDbContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer("Server=DESKTOP-JREQFRS\\HLONG;Initial Catalog=OnlineCourseDB;Integrated Security=SSPI; MultipleActiveResultSets=true;TrustServerCertificate=True;");
+        //optionsBuilder.UseSqlServer("Server=DESKTOP-JREQFRS\\HLONG;Initial Catalog=OnlineCourseDB;Integrated Security=SSPI; MultipleActiveResultSets=true;TrustServerCertificate=True;");
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
